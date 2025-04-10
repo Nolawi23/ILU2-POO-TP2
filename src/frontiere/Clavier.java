@@ -5,6 +5,10 @@ import java.util.Scanner;
 
 public class Clavier {
 	private static Scanner scan = new Scanner(System.in);
+	
+	private Clavier() {
+	    throw new IllegalStateException("Utility class");
+	  }
 
 	public static int entrerEntier(String question) {
 		boolean entreeCorrecte = false;
